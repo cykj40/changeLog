@@ -1,3 +1,5 @@
+import express from 'express';
+
 const express = require('express');
 const app = express();
 
@@ -7,4 +9,4 @@ app.get('/', (req, res) => {
     res.json({message: 'Hello From the other side'});
 });
 
-module.exports = app;
+export default app;
